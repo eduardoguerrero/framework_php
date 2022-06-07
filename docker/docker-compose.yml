@@ -1,0 +1,7 @@
+version: '3'
+services:
+  php:
+    build: images/php
+    container_name: framework_php
+    volumes:
+      - ./../:/home/wwwroot/framework
