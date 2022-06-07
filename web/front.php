@@ -6,6 +6,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel;
 use Symfony\Component\Routing;
 
+// The createFromGlobals() method creates a Request object based on the current PHP global variables.
 $request = Request::createFromGlobals();
 $routes = include __DIR__ . '/../src/app.php';
 
