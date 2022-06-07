@@ -9,6 +9,10 @@ use Symfony\Component\HttpKernel\Controller\ControllerResolver;
 use Symfony\Component\Routing\Exception\ResourceNotFoundException;
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 
+/**
+ * Class Framework
+ * @package Simplex
+ */
 class Framework
 {
     /** @var UrlMatcher */
@@ -39,11 +43,9 @@ class Framework
     public function handle(Request $request)
     {
         $this->matcher->getContext()->fromRequest($request);
-
         try {
-            // Add route array to current request: eg. Array ( [_controller] => render_template [_route] => bye )
+            // Add route array to current request: eg. Array ( [_controller] => render_template [_route] => hello )
             $request->attributes->add($this->matcher->match($request->getPathInfo()));
-
             $controller = $this->controllerResolver->getController($request);
             $arguments = $this->argumentResolver->getArguments($request, $controller);
 

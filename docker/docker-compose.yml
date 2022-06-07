@@ -4,4 +4,4 @@ services:
     build: images/php
     container_name: framework_php
     volumes:
-      - ./../:/home/wwwroot/framework
+      - ./../:/home/wwwroot/framework_php

@@ -6,6 +6,10 @@ use Calendar\Model\LeapYear;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+/**
+ * Class LeapYearController
+ * @package Calendar\Controller
+ */
 class LeapYearController
 {
 

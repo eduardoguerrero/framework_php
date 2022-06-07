@@ -2,6 +2,10 @@
 
 namespace Calendar\Model;
 
+/**
+ * Class LeapYear
+ * @package Calendar\Model
+ */
 class LeapYear
 {
     /**

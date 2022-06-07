@@ -4,7 +4,11 @@ namespace Hello\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
 
-class HelloController
+/**
+ * Class SayHelloController
+ * @package Hello\Controller
+ */
+class SayHelloController
 {
     /**
      * @param $name
